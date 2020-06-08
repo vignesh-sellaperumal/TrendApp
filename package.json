@@ -2,9 +2,6 @@
   "name": "naya-stydio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "10.x"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
@@ -19,30 +16,14 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "node server",
-    "build": "cd react-ui/ && npm install && npm run build"
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
   },
-  "cacheDirectories": [
-    "node_modules",
-    "backend/node_modules"
-  ],
   "eslintConfig": {
     "extends": "react-app"
   },
-  "buildpacks": {
-      "url": "TrendApp/create-react-app"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mars/heroku-cra-node.git"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "create-react-app",
-    "react"
-  ],
-  "license": "MIT",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -54,5 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
