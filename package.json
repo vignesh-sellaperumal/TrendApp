@@ -24,6 +24,9 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "buildpacks": {
+      "url": "TrendApp/create-react-app"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,10 +37,7 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-     "buildpacks": [
-      "url": "TrendApp/create-react-app"
-  ]
+    ]
   }
 }
 }
