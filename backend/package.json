@@ -3,11 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "start": "node server.js",
+    "build": "cd .. && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "cacheDirectories": [
+    "node_modules",
+    "../node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VIGNESH4700/TrendApp.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
